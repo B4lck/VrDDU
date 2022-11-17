@@ -6,7 +6,6 @@ public class HeatUp : MonoBehaviour
 {
     private void OnTriggerEnter(Collider hit)
     {
-        Debug.Log(hit.gameObject.name + " hit us");
         Stegepande hitPande = hit.GetComponent<Stegepande>();
         if (hitPande != null)
         {
