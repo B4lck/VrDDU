@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2841139027689688122}
   - component: {fileID: 2841139027689688123}
   - component: {fileID: 2841139027689688125}
+  - component: {fileID: 1686467943}
   m_Layer: 0
   m_Name: Bacon
   m_TagString: Untagged
@@ -30,14 +31,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6074280518765669358}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -0.63673913, y: 21.569998, z: 2.4585037}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &2255303497987892171
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -264,3 +265,15 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &1686467943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6074280518765669358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1701db76b1f0a2d4989433ec5aeb9cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
