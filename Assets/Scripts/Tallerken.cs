@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tallerken : MonoBehaviour
+public class Tallerken : MonoBehaviour
 {
     public List<Ingredient> ingredienser = new List<Ingredient>();
 
@@ -11,7 +11,7 @@ public class tallerken : MonoBehaviour
     {
         ingredienser.Add(ingredient);
         ingredient.gameObject.GetComponent<XrOffsetGrabInterable>().enabled = false;
-        
+        ingredient.gameObject.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     private void Update()
@@ -20,7 +20,7 @@ public class tallerken : MonoBehaviour
         {
             Transform obj = ingredienser[i].transform;
             Debug.Log(obj.name);
-            obj.position = transform.position + (Vector3.up * i * 5);
+            obj.position = transform.position + (Vector3.up * i * .2f);
             obj.rotation = transform.rotation;
         }
     }
