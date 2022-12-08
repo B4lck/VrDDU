@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class RoastAble : MonoBehaviour
@@ -7,11 +6,11 @@ public class RoastAble : MonoBehaviour
     public int RoastStatus = 0;
 
     public Material[] RoastMaterials = new Material[3];
+    public AudioSource LydEffekt;
 
     private void Start()
     {
         gameObject.GetComponent<Renderer>().material = RoastMaterials[0];
-
     }
 
     public void Roast()
@@ -29,6 +28,7 @@ public class RoastAble : MonoBehaviour
             if (hitPande.Roasting != gameObject)
             {
                 hitPande.StartRoasting(gameObject);
+                LydEffekt.Play();
             }
         }
     }
@@ -41,6 +41,7 @@ public class RoastAble : MonoBehaviour
             if (hitPande.Roasting == gameObject)
             {
                 hitPande.StopRoasting();
+                LydEffekt.Stop();
             }
         }
     }
