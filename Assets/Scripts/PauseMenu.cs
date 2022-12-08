@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject wristUI;
 
-    public bool ActiveWristUI = true;
+    public bool activeWristUI = true;
 
     // Start is called before the first frame update
     void Start()
@@ -16,28 +16,27 @@ public class PauseMenu : MonoBehaviour
         DisplayWristUI();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void PauseButtonPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
+        { 
             DisplayWristUI();
+        }
+           
     }
+
     public void DisplayWristUI()
     {
-        if(ActiveWristUI)
+        if(activeWristUI)
         {
             wristUI.SetActive(false);
-            ActiveWristUI = false;
+            activeWristUI = false;
             Time.timeScale = 1;
         }
-        else if (!ActiveWristUI)
+        else if (!activeWristUI)
         {
             wristUI.SetActive(true);
-            ActiveWristUI = true;
+            activeWristUI = true;
             Time.timeScale = 0;
         }
     }
