@@ -7,6 +7,7 @@ public class RoastAble : MonoBehaviour
 
     public Material[] RoastMaterials = new Material[3];
     public AudioSource LydEffekt;
+    public ParticleSystem StegeEffekt;
 
     private void Start()
     {
@@ -25,11 +26,11 @@ public class RoastAble : MonoBehaviour
         Stegepande hitPande = hit.gameObject.GetComponent<Stegepande>();
         if (hitPande != null)
         {
-            if (hitPande.Roasting != gameObject)
+            if (hitPande.Roasting != gameObject && hitPande.Heated)
             {
                 hitPande.StartRoasting(gameObject);
                 LydEffekt.Play();
-            }
+                StegeEffekt.Play();            }
         }
     }
 
@@ -42,6 +43,7 @@ public class RoastAble : MonoBehaviour
             {
                 hitPande.StopRoasting();
                 LydEffekt.Stop();
+                StegeEffekt.Stop();
             }
         }
     }
