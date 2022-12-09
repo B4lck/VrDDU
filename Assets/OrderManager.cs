@@ -63,6 +63,7 @@ public class OrderManager : MonoBehaviour
         {
             Destroy(ingredient.gameObject);
         }
+        _ing.Clear();
     }
 
     void WrongOrder(List<Ingredient> _ing)
@@ -71,6 +72,7 @@ public class OrderManager : MonoBehaviour
         {
             Destroy(ingredient.gameObject);
         }
+        _ing.Clear();
     }
 
     private void Start()
