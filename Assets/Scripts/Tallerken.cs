@@ -5,6 +5,9 @@ using UnityEngine;
 public class Tallerken : MonoBehaviour
 {
     public List<Ingredient> ingredienser = new List<Ingredient>();
+    public AudioSource LydEffekt;
+
+    public OrderManager orderManager;
 
 
     void add(Ingredient ingredient)
@@ -12,6 +15,8 @@ public class Tallerken : MonoBehaviour
         ingredienser.Add(ingredient);
         ingredient.gameObject.GetComponent<XrOffsetGrabInterable>().enabled = false;
         ingredient.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        LydEffekt.Play();
+        if (ingredient.ingredientType == Ingredient.IngredientType.Top) { orderManager.CheckOrder(ingredienser); }
     }
 
     private void Update()
