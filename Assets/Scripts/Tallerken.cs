@@ -16,12 +16,18 @@ public class Tallerken : MonoBehaviour
 
     private void Update()
     {
+        Vector3 offset = Vector3.zero;
         for (int i = 0; i < ingredienser.Count; i++)
         {
             Transform obj = ingredienser[i].transform;
-            Debug.Log(obj.name);
-            obj.position = transform.position + (Vector3.up * i * .2f);
-            obj.rotation = transform.rotation;
+
+            offset += new Vector3(0, obj.localScale.z / 2, 0);
+
+
+            obj.position = transform.position + offset;
+
+
+            obj.rotation = i == 0? Quaternion.Euler(90,0,0) : Quaternion.Euler(-90,0,0);
         }
     }
 
