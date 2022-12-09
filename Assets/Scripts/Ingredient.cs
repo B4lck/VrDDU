@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [HideInInspector]
+    public enum IngredientType
     {
-        
+        Bøf,
+        Bacon,
+        Tomat,
+        Bund,
+        Top
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public IngredientType ingredientType;
 }
