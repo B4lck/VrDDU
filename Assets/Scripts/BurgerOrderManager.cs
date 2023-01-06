@@ -8,23 +8,28 @@ public class BurgerOrderManager : MonoBehaviour
     public Order[] Orders = new Order[3];
 
     public AudioSource RigtigLydEffekt;
+    private UiOrdrerManager UIManager;
+
+    public void Awake()
+    {
+        UIManager = gameObject.GetComponent<UiOrdrerManager>();
+    }
 
     public void CreateNewOrder(Order TargetOrder)
     {
         for (int i = 0; i < Orders.Length; i++)
         {
-            Debug.Log(Orders[i]);
             if (Orders[i] == null)
             {
                 Orders[i] = TargetOrder;
                 break;
             }
         }
+        UIManager.UpdateUi();
     }
 
     public void CheckOrder(List<Ingredient> Burger)
     {
-        Debug.Log("Jeg blev kaldet!");
 
         bool CorrectOrder;
         foreach (Order order in Orders)
