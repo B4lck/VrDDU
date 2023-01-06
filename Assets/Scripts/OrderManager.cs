@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-public class OrderManager : MonoBehaviour
+public class BurgerOrderManager : MonoBehaviour
 {
     [SerializeField]
     public Order[] Orders = new Order[3];
