@@ -14,7 +14,7 @@ public class Ketchup : MonoBehaviour
             Tallerken tal = hit.transform.GetComponent<Tallerken>();
             if (tal.ingredienser.Count > 0)
             {
-                if (tal.ingredienser[tal.ingredienser.Count - 1].ingredientType != Ingredient.IngredientType.Ketchup)
+                if (tal.ingredienser[tal.ingredienser.Count - 1].ingredientType == Ingredient.IngredientType.Bund)
                 {
                     tal.add(Instantiate(KetchupStribe, tal.transform.position, Quaternion.Euler(0,0,0)).GetComponent<Ingredient>());
                 }
