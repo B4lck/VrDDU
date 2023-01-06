@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!33 &9115675961183868173
 MeshFilter:
@@ -103,7 +103,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!65 &5666654322594790455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -244,3 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf4d89761c0c014daeb83551a0c17f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  KetchupStribe: {fileID: 0}
