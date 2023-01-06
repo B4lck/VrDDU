@@ -11,7 +11,8 @@ public class Ingredient : MonoBehaviour
         Bacon,
         Tomat,
         Bund,
-        Top
+        Top,
+        Ketchup
     }
 
     public IngredientType ingredientType;

@@ -10,7 +10,7 @@ public class Tallerken : MonoBehaviour
     public OrderManager orderManager;
 
 
-    void add(Ingredient ingredient)
+    public void add(Ingredient ingredient)
     {
         ingredienser.Add(ingredient);
         ingredient.gameObject.GetComponent<XrOffsetGrabInterable>().enabled = false;
@@ -33,6 +33,7 @@ public class Tallerken : MonoBehaviour
 
 
             obj.rotation = i == 0? Quaternion.Euler(90,0,0) : Quaternion.Euler(-90,0,0);
+            if (ingredienser[i].ingredientType == Ingredient.IngredientType.Ketchup) obj.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
