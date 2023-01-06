@@ -7,7 +7,7 @@ public class Tallerken : MonoBehaviour
     public List<Ingredient> ingredienser = new List<Ingredient>();
     public AudioSource LydEffekt;
 
-    public OrderManager orderManager;
+    public BurgerOrderManager orderManager;
 
 
     public void add(Ingredient ingredient)
