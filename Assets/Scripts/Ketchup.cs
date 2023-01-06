@@ -10,7 +10,7 @@ public class Ketchup : MonoBehaviour
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10f, TargetLayer)) 
-        {
+        { 
             Tallerken tal = hit.transform.GetComponent<Tallerken>();
             if (tal.ingredienser.Count > 0)
             {

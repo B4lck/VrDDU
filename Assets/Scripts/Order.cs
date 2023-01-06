@@ -12,4 +12,18 @@ public class Order : MonoBehaviour
         this.timer = time;
         Debug.Log("Oprettede en ordre");
     }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            EndOrder();
+        }
+    }
+
+    public void EndOrder()
+    {
+        Destroy(this);
+    }
 }
