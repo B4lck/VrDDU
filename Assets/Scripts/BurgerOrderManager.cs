@@ -69,6 +69,8 @@ public class BurgerOrderManager : MonoBehaviour
             Destroy(ingredient.gameObject);
         }
         _ing.Clear();
+        Debug.Log("Rigtigt!");
+        UIManager.UpdateUi();
     }
 
     void WrongOrder(List<Ingredient> _ing)
@@ -78,6 +80,8 @@ public class BurgerOrderManager : MonoBehaviour
             Destroy(ingredient.gameObject);
         }
         _ing.Clear();
+        Debug.Log("Forkert!");
+        UIManager.UpdateUi();
     }
 
     private void Start()
@@ -108,5 +112,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Top,
         }, 20f);
         CreateNewOrder(order1);
+        CreateNewOrder(order2);
+        CreateNewOrder(order3);
     }
 }

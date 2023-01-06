@@ -27,17 +27,16 @@ public class UiOrdrerManager : MonoBehaviour
 
     public void UpdateUi()
     {
-        // Clear the canvas
+        /*
         foreach (GameObject aSprite in AktiveSprites) {
             Destroy(aSprite);
         }
-        AktiveSprites.Clear();
+        AktiveSprites.Clear();*/
 
 
         // Draw the orders
         foreach (Order ordre in OrderManager.Orders)
         {
-            Debug.Log("Ordre");
             if (!ordre) continue;
             int x = System.Array.IndexOf(OrderManager.Orders, ordre);
             foreach (Ingredient.IngredientType ingredient in ordre.ingredienser) {
@@ -67,7 +66,8 @@ public class UiOrdrerManager : MonoBehaviour
                         break;
                 }
                 GameObject obj = Instantiate(sprites[i], new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0), canvas.transform);
-                obj.transform.localPosition = new Vector3(0,0,0);
+                obj.transform.localPosition = new Vector3(x * 34,y * 10,0);
+                AktiveSprites.Add(obj);
             }
         }
     }

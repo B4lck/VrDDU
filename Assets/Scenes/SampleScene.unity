@@ -1798,7 +1798,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e39720cb99370a14888d62313289e40f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.017
+      value: 21.533
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e39720cb99370a14888d62313289e40f,
         type: 3}
@@ -2869,7 +2869,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381554618}
   m_LocalRotation: {x: -0.1565653, y: -0.4063939, z: -0.07510679, w: 0.8970453}
-  m_LocalPosition: {x: 0, y: 0, z: 2.157}
+  m_LocalPosition: {x: 0, y: 0, z: 2.081}
   m_LocalScale: {x: 0.00859076, y: 0.0054641864, z: 0.009848542}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2880,7 +2880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -19.995, y: -48.664, z: -0.457}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -3.017, y: 22.408}
+  m_AnchoredPosition: {x: -3.101, y: 22.372}
   m_SizeDelta: {x: 785, y: 636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1404501978
@@ -3890,7 +3890,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -4095,7 +4095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601934894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.763, y: 22.017, z: -0.324}
+  m_LocalPosition: {x: -0.763, y: 21.533, z: -0.324}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5813,7 +5813,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080701409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5822,7 +5822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.5, y: -9.2}
+  m_AnchoredPosition: {x: -31, y: -13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080701411
@@ -5832,7 +5832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080701409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

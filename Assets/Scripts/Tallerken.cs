@@ -39,7 +39,6 @@ public class Tallerken : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.GetComponent<Ingredient>())
         {
             add(collision.gameObject.GetComponent<Ingredient>());

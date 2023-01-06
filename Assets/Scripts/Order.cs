@@ -10,7 +10,6 @@ public class Order : MonoBehaviour
     {
         this.ingredienser = ingredients;
         this.timer = time;
-        Debug.Log("Oprettede en ordre");
     }
 
     private void Update()
