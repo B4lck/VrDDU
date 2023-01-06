@@ -6019,6 +6019,21 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1071353342287035412, guid: b8c07bc7f5ee0914ca12d45c493b453a,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071353342287035412, guid: b8c07bc7f5ee0914ca12d45c493b453a,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071353342287035412, guid: b8c07bc7f5ee0914ca12d45c493b453a,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c07bc7f5ee0914ca12d45c493b453a, type: 3}
