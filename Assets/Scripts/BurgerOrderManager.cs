@@ -34,6 +34,7 @@ public class BurgerOrderManager : MonoBehaviour
         bool CorrectOrder;
         foreach (Order order in Orders)
         {
+            Debug.Log(order);
             if (order == null) { continue; } // Hvis ikke ordren er sat, så lad vær med at tjekke den
             CorrectOrder = true; // Reset 
 
@@ -93,7 +94,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Bøf,
             Ingredient.IngredientType.Bacon,
             Ingredient.IngredientType.Top,
-        }, 20f);
+        }, 120f);
         Order order2 = gameObject.AddComponent(typeof(Order)) as Order;
         order2.OrderConstructor(new List<Ingredient.IngredientType>()
         {
@@ -101,7 +102,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Bøf,
             Ingredient.IngredientType.Tomat,
             Ingredient.IngredientType.Top,
-        }, 20f);
+        }, 120f);
         Order order3 = gameObject.AddComponent(typeof(Order)) as Order;
         order3.OrderConstructor(new List<Ingredient.IngredientType>()
         {
@@ -110,7 +111,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Tomat,
             Ingredient.IngredientType.Bacon,
             Ingredient.IngredientType.Top,
-        }, 20f);
+        }, 120f);
         CreateNewOrder(order1);
         CreateNewOrder(order2);
         CreateNewOrder(order3);
