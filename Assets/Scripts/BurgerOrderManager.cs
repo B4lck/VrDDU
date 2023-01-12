@@ -94,7 +94,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Bøf,
             Ingredient.IngredientType.Bacon,
             Ingredient.IngredientType.Top,
-        }, 120f);
+        }, 180f);
         Order order2 = gameObject.AddComponent(typeof(Order)) as Order;
         order2.OrderConstructor(new List<Ingredient.IngredientType>()
         {
@@ -102,7 +102,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Bøf,
             Ingredient.IngredientType.Tomat,
             Ingredient.IngredientType.Top,
-        }, 120f);
+        }, 180f);
         Order order3 = gameObject.AddComponent(typeof(Order)) as Order;
         order3.OrderConstructor(new List<Ingredient.IngredientType>()
         {
@@ -111,7 +111,7 @@ public class BurgerOrderManager : MonoBehaviour
             Ingredient.IngredientType.Tomat,
             Ingredient.IngredientType.Bacon,
             Ingredient.IngredientType.Top,
-        }, 120f);
+        }, 180f);
         CreateNewOrder(order1);
         CreateNewOrder(order2);
         CreateNewOrder(order3);

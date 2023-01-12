@@ -13,6 +13,8 @@ public class Cutable : MonoBehaviour
         if (Health <= 0)
         {
             Instantiate(CutTo, transform.position + new Vector3(0,.1f,0), transform.rotation);
+            Instantiate(CutTo, transform.position + new Vector3(0,.3f,0), transform.rotation);
+            Instantiate(CutTo, transform.position + new Vector3(0,.5f,0), transform.rotation);
             Destroy(gameObject);
         }
     }
