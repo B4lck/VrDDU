@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    [HideInInspector]
-    public enum IngredientType
+    [HideInInspector] // Det skal ignoreres i Unity programmet.
+    public enum IngredientType // Forskellige typer af ingredienser
     {
         Bøf,
         Bacon,
@@ -15,5 +15,5 @@ public class Ingredient : MonoBehaviour
         Ketchup
     }
 
-    public IngredientType ingredientType;
+    public IngredientType ingredientType; // Hvilken type ingrediens er dette
 }
